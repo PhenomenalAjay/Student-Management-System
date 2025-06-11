@@ -1,0 +1,26 @@
+<h3>Add New Student </h3>
+
+{{#if msg}}
+<div class="alert">
+    {{msg}}
+</div>
+{{/if}}
+
+<form method="post" action="/adduser">
+<div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+</div>
+<div class="form-group">
+    <label for="age">Age:</label>
+    <input type="text" id="name" name="age" required>
+</div>
+<div class="form-group">
+    <label for="age">City:</label>
+    <input type="text" id="name" name="city" required>
+</div>
+<div class="form-group">
+    <button type="submit">Save Details</button>
+    <a href="/">View All</a>
+</div>
+</form>
